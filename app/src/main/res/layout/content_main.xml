@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jayr.jaystranslator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:inputType="text|textMultiLine"
+        android:hint="@string/HINT_EditYourTextHere"
+        android:isScrollContainer="false"
+        android:lines="5"
+        android:layout_below="@+id/btnDelete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Delete_Text"
+        android:id="@+id/btnDelete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Translate"
+        android:id="@+id/btnTranslate"
+        android:textStyle="italic"
+        android:layout_above="@+id/txtTranslate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTranslate"
+        android:inputType="text|textMultiLine"
+        android:isScrollContainer="true"
+        android:lines="5"
+        android:hint="@string/HINT_TranslateYourText"
+        android:editable="false"
+        android:textSize="18sp"
+        android:enabled="true"
+        android:layout_above="@+id/btnSpeak"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Speak_Now"
+        android:id="@+id/btnSpeak"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Record"
+        android:id="@+id/btnRecord"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txtText"
+        android:layout_alignEnd="@+id/txtText" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerDest"
+        android:layout_alignTop="@+id/btnTranslate"
+        android:layout_alignRight="@+id/txtTranslate"
+        android:layout_alignEnd="@+id/txtTranslate"
+        android:layout_alignLeft="@+id/btnRecord"
+        android:layout_alignStart="@+id/btnRecord" />
+</RelativeLayout>

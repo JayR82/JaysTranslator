@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Jays Translator</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="languageDest">
+        <item>ENGLISH</item>
+        <item>GERMAN</item>
+        <item>SPANISH</item>
+        <item>ITALIAN</item>
+        <item>FRENCH</item>
+        <item>PORTUGUESE</item>
+        <item>RUSSIAN</item>
+        <item>GREEK</item>
+        <item>TURKISH</item>
+        <item>FINNISH</item>
+        <item>SWEDISH</item>
+        <item>NORWEGIAN</item>
+        <item>HINDI</item>
+        <item>HEBREW</item>
+        <item>CHINESE</item>
+        <item>JAPANESE</item>
+        <item>ARABIC</item>
+        <item>THAI</item>
+        <item>INDONESIAN</item>
+        <item>KOREAN</item>
+    </string-array>
+
+    <string name="speech_prompt">Jetzt spechen...</string>
+    <string name="speech_not_supported">Sprache ist nicht unterstützt!</string>
+    <string name="Delete_Text">Text löschen</string>
+    <string name="Translate">Übersetzen</string>
+    <string name="Speak_Now">Vorlesen...</string>
+    <string name="Record">Stimme aufnehmen</string>
+    <string name="HINT_EditYourTextHere">Hier Text zum übersetzen eingeben... Sprache wird automatisch erkannt</string>
+    <string name="HINT_TranslateYourText">Hier erscheint dein übersetzter Text in gewählter Sprache...</string>
+    <string name="temp">january</string>
+</resources>
